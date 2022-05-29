@@ -60,8 +60,9 @@ public class Quote  {
     public String toString() {
 
         StringBuilder sb = new StringBuilder();
-        sb.append("id:"+this.id+"\n");
-        sb.append("quote:"+this.quote+"\n");
+
+        sb.append(( String.valueOf(this.id))== null ? " " : "id:"+this.id+"\n");
+        sb.append(this.quote==null ? " " : "quote:"+this.quote+"\n");
 
         return sb.toString();
 
